@@ -16,9 +16,10 @@
 
   <div class="text-center container h-full flex flex-col p-10" id="container">
     <strong class="capitalize">Customer Returns</strong>
+    <ion-input type="text" value="" [(ngModel)]="num"></ion-input>
     <div class="flex h-full">
       <div class="w-full flex flex-col items-center place-self-center">
-        <button (click)="showSwalTest()" class="w-1/2 h-24 bg-red-500 rounded-xl p-4 shadow-xl mb-10">Scan Barcode</button>
+        <button (click)="scan()" class="w-1/2 h-24 bg-red-500 rounded-xl p-4 shadow-xl mb-10">Scan Barcode</button>
         <button class="w-1/2 h-24 bg-red-500 rounded-xl p-4 shadow-xl">Create RMA</button>
       </div>
     </div>
